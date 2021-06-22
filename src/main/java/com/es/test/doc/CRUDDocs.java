@@ -18,7 +18,7 @@ import org.elasticsearch.common.xcontent.XContentType;
 
 import java.io.IOException;
 
-public class DocTest {
+public class CRUDDocs {
     public static void main(String[] args) throws IOException {
         HttpHost httpHost = new HttpHost("localhost", 9200, "http");
         RestClientBuilder builder = RestClient.builder(httpHost);

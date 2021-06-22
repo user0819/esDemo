@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="596a283a-7bcc-475f-a2d1-bef19d0f197d" name="Default Changelist" comment="" />
+    <list default="true" id="596a283a-7bcc-475f-a2d1-bef19d0f197d" name="Default Changelist" comment="init">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/es/test/doc/BatchInsertDocs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/es/test/doc/SearchDocs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/es/test/doc/DocTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/es/test/doc/CRUDDocs.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,14 +55,27 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.DocTest">
-    <configuration name="DocTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.es.test.doc.DocTest" />
+  <component name="RunManager" selected="Application.SearchDocs">
+    <configuration name="BatchInsertDocs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.es.test.doc.BatchInsertDocs" />
+      <module name="esDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.es.test.doc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CRUDDocs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.es.test.doc.CRUDDocs" />
       <module name="esDemo" />
       <extension name="coverage">
         <pattern>
@@ -94,9 +113,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SearchDocs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.es.test.doc.SearchDocs" />
+      <module name="esDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.es.test.doc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DocTest" />
+        <item itemvalue="Application.SearchDocs" />
+        <item itemvalue="Application.BatchInsertDocs" />
+        <item itemvalue="Application.CRUDDocs" />
         <item itemvalue="Application.EsCreateIndex" />
         <item itemvalue="Application.EsClient" />
       </list>
@@ -113,8 +158,16 @@
       <workItem from="1623944850578" duration="2286000" />
       <workItem from="1624027906960" duration="8674000" />
       <workItem from="1624067723150" duration="2848000" />
-      <workItem from="1624284193319" duration="597000" />
+      <workItem from="1624284193319" duration="5092000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1624285393990</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624285393990</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +184,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
