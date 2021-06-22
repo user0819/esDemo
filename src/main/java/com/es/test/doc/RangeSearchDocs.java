@@ -8,7 +8,9 @@ import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestClientBuilder;
 import org.elasticsearch.client.RestHighLevelClient;
+import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.index.query.RangeQueryBuilder;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.elasticsearch.search.sort.SortOrder;
@@ -17,8 +19,10 @@ import java.io.IOException;
 
 /**
  * 高级查询功能
+ *
+ * 组合查询
  */
-public class SearchDocs {
+public class RangeSearchDocs {
     public static void main(String[] args) throws IOException {
         HttpHost httpHost = new HttpHost("localhost", 9200, "http");
         RestClientBuilder clientBuilder = RestClient.builder(httpHost);
@@ -28,9 +32,11 @@ public class SearchDocs {
             searchRequest.indices("my_user");
             SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
 
-            //1、查询
-            sourceBuilder.query(QueryBuilders.matchAllQuery());
-            //sourceBuilder.query(QueryBuilders.matchQuery("name", "liu"));
+            //1、范围查询
+            RangeQueryBuilder rangeQueryBuilder = QueryBuilders.rangeQuery("age");
+            rangeQueryBuilder.gte(23);
+            rangeQueryBuilder.lte(32);
+            sourceBuilder.query(rangeQueryBuilder);
 
             //2、排序
             sourceBuilder.sort("age", SortOrder.ASC);

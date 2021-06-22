@@ -34,6 +34,7 @@ public class BatchInsertDocs {
             bulkRequest.add(new IndexRequest().index("my_user").id("1003").source(JSON.toJSONString(new User("liu", 23, "234")), XContentType.JSON));
             bulkRequest.add(new IndexRequest().index("my_user").id("1004").source(JSON.toJSONString(new User("xian", 23, "159")), XContentType.JSON));
             bulkRequest.add(new IndexRequest().index("my_user").id("1005").source(JSON.toJSONString(new User("hua", 32, "159516")), XContentType.JSON));
+            bulkRequest.add(new IndexRequest().index("my_user").id("1006").source(JSON.toJSONString(new User("ang", 32, "159516")), XContentType.JSON));
             BulkResponse bulkResponse = client.bulk(bulkRequest, RequestOptions.DEFAULT);
 
             System.out.println("批量增加doc结果：" + JSON.toJSONString(bulkResponse));
